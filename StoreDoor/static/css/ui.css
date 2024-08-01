@@ -426,6 +426,7 @@ p:last-child {
   position: relative;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  /* background-color: #ceefef; */
 }
 
 .brand-wrap .logo, .navbar-brand .logo {
@@ -825,6 +826,7 @@ a[class*=card] {
 }
 a[class*=card]:hover .title {
   color: #3167eb;
+  
 }
 
 /* BASE STYLE FOR PRODUCT ITEM */
@@ -859,6 +861,7 @@ a[class*=card]:hover .title {
 /* GRID STYLE PRODUCT ITEM */
 .card-product-grid {
   margin-bottom: 20px;
+  min-height: 350px;
 }
 .card-product-grid .img-wrap {
   border-radius: 0.2rem 0.2rem 0 0;

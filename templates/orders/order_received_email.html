@@ -1,0 +1,24 @@
+{% comment %} # Rendering HTML in Emails {% endcomment %}
+{% autoescape off %}
+
+Hi {{ user.first_name }},
+
+Your Order is successfully placed.
+
+Your Order details are as follow 
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.created_at }}
+
+{% for item in cart_items %}
+Product: {{ item.product.product_name }}
+Quantity: {{ item.quantity }}
+Price: {{ item.product.price }}
+{% endfor %}
+
+Total Amount: {{ order.order_total }}
+
+Thank you for shopping with us
+
+
+{% endautoescape %}

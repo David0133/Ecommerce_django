@@ -54,6 +54,10 @@ $(document).ready(function() {
 
 
 
+    moon = document.getElementsByClassName('bi-moon')[0];
+    moon.addEventListener('click', function(){
+        document.body.classList.toggle('dark')
+    })
     
 }); 
 // jquery end
@@ -61,3 +65,4 @@ $(document).ready(function() {
 setTimeout(function(){
     $('#message').fadeOut('slow')
 },4000)
+

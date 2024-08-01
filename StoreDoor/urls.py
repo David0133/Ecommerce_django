@@ -21,7 +21,8 @@ from StoreDoor import settings
 from .views import home
 from django.conf.urls.static import static
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
+    path('store_admin/', admin.site.urls),
     path('',home,name="home"),
     path('product/',include('Products.urls')),
     path('cart/', include('Cart.urls')),

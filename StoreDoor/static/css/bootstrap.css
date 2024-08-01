@@ -71,6 +71,12 @@ body {
   background-color: #fff;
 }
 
+.dark{
+    background-color: #545454;
+    color: #fff !important;
+}
+
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
